@@ -1,16 +1,15 @@
 # Portfolio
 Portfolio Project
 
-## Project Schedule
+## Project Schedule / Timeline
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
+|Day 1| Project Description | complete
 |Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Day 2,3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
-|Day 5| Final Touches | Incomplete
-|Day 6| Present | Incomplete
+|Day 5| Final Touches/Present | Incomplete
 
 
 ## Project Description
@@ -26,6 +25,7 @@ In this repo, you will find...
 ## Google Sheet for List of Projects
 
 [LINK](https://docs.google.com/spreadsheets/d/1DVsYouq2bljhJaC5GVWesAj1GZoAT1sTI-1inopSn3o/edit#gid=0) 
+Still need to add images to them
 
 ## Wireframes
 
