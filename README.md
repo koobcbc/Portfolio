@@ -41,9 +41,6 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 ### MVP/PostMVP 
 
-#### MVP 
-#### PostMVP 
-
 - [MVP&PostMVP](https://docs.google.com/spreadsheets/d/1idkC--5e52-cfHt48fEzBxfiWZGT9OK25DsRQnVbUV4/edit?usp=sharing)
 
 ## Additional Libraries
