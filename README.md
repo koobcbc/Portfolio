@@ -9,4 +9,6 @@ In this repo, you will find...
 - Minimal Viable Product (MVP) & Post-MVP
 - html, css, js files for the project
 
-Timeframe:
+
+
+
