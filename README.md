@@ -25,8 +25,7 @@ In this repo, you will find...
 
 ## Google Sheet for List of Projects
 
-[LINK]
-(https://docs.google.com/spreadsheets/d/1DVsYouq2bljhJaC5GVWesAj1GZoAT1sTI-1inopSn3o/edit#gid=0) 
+[LINK](https://docs.google.com/spreadsheets/d/1DVsYouq2bljhJaC5GVWesAj1GZoAT1sTI-1inopSn3o/edit#gid=0) 
 
 ## Wireframes
 
@@ -53,7 +52,7 @@ Once complete tally up the time and determine how long the project will take to 
 #### MVP 
 #### PostMVP 
 
-- [MVP] (https://docs.google.com/spreadsheets/d/1idkC--5e52-cfHt48fEzBxfiWZGT9OK25DsRQnVbUV4/edit?usp=sharing)
+- [MVP](https://docs.google.com/spreadsheets/d/1idkC--5e52-cfHt48fEzBxfiWZGT9OK25DsRQnVbUV4/edit?usp=sharing)
 
 ## Additional Libraries
  - 
