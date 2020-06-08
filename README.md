@@ -31,9 +31,10 @@ In this repo, you will find...
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-- [Mobile](https://i.imgur.com/cQLTXNF.jpg)
-- [Desktop](https://i.imgur.com/syNcS1K.jpg)
-- [Desktop Contact Me Page](https://i.imgur.com/Tt4Ym1z.jpg)
+- [Mobile](https://i.imgur.com/cdef8JY.jpg)
+- [Desktop Main/Projects Page](https://i.imgur.com/ELkIWbi.jpg)
+- [Desktop Contact Me & AboutMe Page](https://i.imgur.com/dC5EJsj.jpg)
+- Tablet will be a resizing of Desktop version
 
 ## Time/Priority Matrix 
 
