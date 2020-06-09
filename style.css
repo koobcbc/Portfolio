@@ -157,7 +157,7 @@ h2 {
   }
 
   .individualProject {
-    width: 80%;
+    width: 100%;
     height: 100%;
     background-color: white;
     box-shadow: 0 0 30px black;
@@ -165,7 +165,7 @@ h2 {
   }
   .projectImageDiv{
     padding: 20px;
-    min-height: 200px;
+    min-height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,14 +201,31 @@ h2 {
 
   @media only screen and (min-width:833px) {
     
+    .projectImageDiv {
+      min-height: 450px;
+      opacity: 0.4;
+    }
+
+    .projectImageDiv:hover {
+      opacity: 1;
+    }
+
     .project-container {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
-  }
+    }
+  
 
 
   @media only screen and (min-width:1113px) {
-    
+    .projectImageDiv {
+      min-height: 450px;
+      opacity: 0.4;
+    }
+
+    .projectImageDiv:hover {
+      opacity: 1;
+    }
 
     .project-container {
         grid-template-columns: 1fr 1fr 1fr;
