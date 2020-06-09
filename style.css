@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General Styling */
 body {
     margin: 0;
@@ -179,3 +180,8 @@ h1 {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
   }
+=======
+*{
+    font-size:16px;
+}
+>>>>>>> c3bf7b5744e09eec47298d48ec6bae82b9846c61
