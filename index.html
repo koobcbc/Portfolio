@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Katy Koo Portfolio</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar-custom">
+        <a class="navbar-brand" href="#">KATY KOO</a>
+        <div id="shadowOnScroll"></div>
+        <container id="collapse-container"></container>
+        <a href="javascript:void(0);" class="icon" id="burger-icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="hide" id="collapse" style="display: none; opacity: 0; transform: scale(0);">
+            <a class="navItem" href="#">Projects</a>
+            <a class="navItem" href="#">About</a>
+            <a class="navItem" href="#">Resume</a>
+            <a class="navItem" href="#">Contact</a>
+        </div>     
+    </nav>
+    <div class="mainDiv">
+        <br><br><br>
+        <h1 style="font-size: 40px;">Hello. I'm Katy</h1>
+        <div class="imgOfMe block">img of me</div>
+        <h2 class="block">introduction</h2>
+        <br><br><br><br><br><br>
+    </div>
+    <div class="projectDiv">
+        <container class="project-container">
+            <h1 class="white">Projects</h1>
+            <!-- items will be added using google sheet as json via ajax -->
+            <!-- general format will look like this below -->
+            <!-- <div id="individualProject">
+                <div class="projectImage">image</div>
+                <div class="descriptionBox">
+                    <h3 class="projectTitle">project title</h3>
+                    <h4 class="projectDescription">project description</h4>
+                </div>
+            </div> -->
+        </container>
+    </div>
+
+    <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
