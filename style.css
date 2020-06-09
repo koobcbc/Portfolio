@@ -136,13 +136,17 @@ h2 {
       z-index: 1;
   }
 
-
+  .slantedDiv {
+    background-color: rgb(28, 43, 109);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    height: 5vw;
+  }
   /* ----------------- */
   /* PROJECT DIVISION */
   /* ----------------- */
 
   .projectDiv {
-    padding: 50px;
+    padding: 10vw;
     background-color: rgb(28, 43, 109);
     /* reference for slanted bottom/top edges: https://www.viget.com/articles/angled-edges-with-css-masks-and-transforms/ */
     z-index: 1;
@@ -153,7 +157,7 @@ h2 {
       align-items: center;
       justify-items: center;
       grid-template-columns: 1fr;
-      gap: 40px;
+      gap: 10vw;
   }
 
   .individualProject {
@@ -193,14 +197,14 @@ h2 {
 /* RESPONSIVE DESIGN */
 /* ----------------- */
 
-  @media only screen and (min-width:400px) {
-    .projectDiv {
-      clip-path: polygon(0 98%, 100% 100%, 100% 0, 0 2%);
+  @media only screen and (max-width:499px) {
+    .slantedDiv {
+      clip-path: none;
     }
   }
 
   @media only screen and (min-width:833px) {
-    
+
     .projectImageDiv {
       min-height: 450px;
       opacity: 0.4;
@@ -218,6 +222,7 @@ h2 {
 
 
   @media only screen and (min-width:1113px) {
+
     .projectImageDiv {
       min-height: 450px;
       opacity: 0.4;
