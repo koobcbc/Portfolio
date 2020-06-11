@@ -39,11 +39,17 @@ a {
     color: white;
 }
 
+.bg-Navy {
+  background-color: rgb(28, 43, 109);
+}
+
 /* HAMBURGER ICON reference: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
 
 /* ------------------------- */
 /* Style the navigation menu */
 /* ------------------------- */
+
+/* height of navbar: 83px */
 .navbar-custom {
     box-sizing: border-box;
     overflow: visible;
@@ -143,6 +149,11 @@ a {
     color: black;
   }
 
+  .positionDown {
+    padding-top:100px;
+  }
+
+
 
 /* -------------------------------*/
 /* MAIN DIV (Introduction) Styling*/
@@ -166,6 +177,7 @@ a {
     background-color: rgb(28, 43, 109);
     clip-path: polygon(100% 0, 0 100%, 100% 100%);
     height: 5vw;
+    border: 1px solid rgb(28, 43, 109);
   }
   /* ----------------- */
   /* PROJECT DIVISION */
@@ -219,12 +231,21 @@ a {
     font-weight: 300;
   }
 
+/* div created to match the height of nav bar
+in order to go to the very top of the section when clicked on nav */
+.heightMatchingDiv {
+  height: 83px;
+  width: 100%;
+}
+
 /* ----------------- */
 /* AboutMe Styling */
 /* ----------------- */
 
 .aboutMe {
   text-align: center;
+  padding: 25px;
+  min-height: 100vh;
 }
 
 /* ----------------- */
@@ -234,6 +255,7 @@ a {
 .contactMe {
   background-color: rgb(28, 43, 109);
   color: white;
+  min-height: 100vh;
 }
 
 .contactMe-container {
@@ -254,12 +276,22 @@ width: 100%
   font-size: 17px;
 }
 
+.infoEmail {
+  font-size: 14px;
+}
+
 .myInfoLinks {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 100px;
   justify-content: space-around;
+  cursor: pointer;
+}
+
+.myInfoLinks p:hover {
+  text-decoration: underline;
+  color: rgb(89, 102, 170);
 }
 
 .emailInputBox {
@@ -272,10 +304,11 @@ width: 100%
 }
 
 .input {
-  text-align: center;
+  text-align: left;
   font-size: 17px;
-  padding: 5px;
+  padding: 3px 3px;
   margin: 5px;
+  width: 70%;
   border: 1px solid gray;
 }
 
@@ -285,7 +318,7 @@ width: 100%
 
 .submitBtn {
   cursor: pointer;
-  width: 60%;
+  width: 200px;
   background-color: #f3f3f3;
   border: 1px solid black;
   display: inline-block;
@@ -294,8 +327,11 @@ width: 100%
   padding: 5px;
 }
 
+
+/* ----------------- */
 /* ----------------- */
 /* RESPONSIVE DESIGN */
+/* ----------------- */
 /* ----------------- */
 
   @media only screen and (max-width:499px) {
