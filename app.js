@@ -1,4 +1,8 @@
+  // ------------------------------------------------------------------------------------------------------
   /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger icon*/
+    // ------------------------------------------------------------------------------------------------------
+
+
   function myFunction() {
       let $collapsingList = document.getElementById("collapse");
       $collapsingList.className = $collapsingList.className !== 'show' ? 'show' : 'hide';
@@ -37,7 +41,11 @@
     }
 
   //reference: https://stackoverflow.com/questions/14804725/twitter-bootstrap-navbar-shadow-on-scroll
-  //showing a box-shadow below navbar when scrolled down
+
+    // ---------------------------------------------------
+    //showing a box-shadow below navbar when scrolled down
+    // ---------------------------------------------------
+
     $(document).ready(function(){
       $(window).scroll(function(){
       let $shadowScroll= $(window).scrollTop();
@@ -49,8 +57,11 @@
       });
     })
 
+
+  // ---------------------------------------------------------
   // PROJECTS PAGE PORTION (using google sheet as json via ajax)
-  // sheetUrl is the shared url of google sheet (project files)
+  // ---------------------------------------------------------
+
   const sheetUrl = 'https://docs.google.com/spreadsheets/d/1DVsYouq2bljhJaC5GVWesAj1GZoAT1sTI-1inopSn3o/edit?usp=sharing'
   const sheetAsJSON = 'https://spreadsheets.google.com/feeds/list/1DVsYouq2bljhJaC5GVWesAj1GZoAT1sTI-1inopSn3o/od6/public/values?alt=json'
 
@@ -79,13 +90,21 @@
 
           //create a div for img inside "individual project div"
           let projectImgDiv = $('<div>')
+          let projectImgLink = $('<a>')
           let projectImg = $('<img>')
           projectImgDiv.addClass('projectImageDiv')
+          projectImgLink.addClass('projectImageLink')
           projectImg.addClass('projectImage')
+
+          projectImgLink
+            .css('width','100%')
+            .attr('href',project.url)
           projectImg
               .attr('src', project.image)
               .attr('alt', 'image of project')
-          projectImgDiv.append(projectImg)
+              .css('cursor','pointer')
+          projectImgLink.append(projectImg)
+          projectImgDiv.append(projectImgLink)
           individualProject.append(projectImgDiv)
 
           //create div for description box

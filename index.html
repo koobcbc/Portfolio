@@ -14,6 +14,7 @@
     crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- NAV SECTION -->
     <nav class="navbar-custom">
         <a class="navbar-brand" href="#">KATY KOO</a>
         <div id="shadowOnScroll"></div>
@@ -28,14 +29,16 @@
             <a class="navItem" href="_subpages/contact.html">Contact</a>
         </div>     
     </nav>
+    <!-- MAIN SECTION -->
     <div class="mainDiv">
-        <br><br><br>
+        <br><br>
         <h1 style="font-size: 40px;">Hello. I'm Katy</h1>
         <div class="imgOfMe block">img of me</div>
-        <h2 class="block">introduction</h2>
+        <h2 class="introduction block">I’m a software engineer who has a background in Biology / Biochemistry / Math from which I grew a passion for technology and innovation. I consider myself a challenger and a learner who loves to crack complex problems by using my strengths in creative thinking and quick adaptability. I am happy to expand my skills to build out solutions for ranges of projects to enhance the lives of others.</h2>
         <br><br><br><br><br><br>
     </div>
     <div class="slantedDiv"></div>
+    <!-- PROJECT SECTION -->
     <div class="projectDiv">
         <br><br><br>
         <h2 class="white">Projects</h2>
@@ -44,7 +47,7 @@
             <!-- items will be added using google sheet as json via ajax -->
             <!-- general format will look like this below -->
             <!-- <div id="individualProject">
-                    <div class="projectImageDiv"><img class="projectImage"></div>
+                    <div class="projectImageDiv"><a class="projectImageLink"><img class="projectImage"></a></div>
                     <div class="descriptionBox">
                         <h3 class="projectTitle">project title</h3>
                         <h4 class="projectDescription">project description</h4>
@@ -52,7 +55,35 @@
                 </div> -->
         </container>
     </div>
-
+    <!-- ABOUT ME SECTION -->
+    <div class="aboutMe">
+        <div class="img">
+            <img src="#" alt="Photo of Katy">
+        </div>
+        <p>Hi! I'm Katy Koo. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
+    </div>
+    <!-- CONTACT ME SECTION -->
+    <div class="contactMe">
+        <br><br>
+        <h2>CONTACT ME</h2>
+        <container class="contactMe-container">
+            <div class="myInfo">
+                <p class="name clock">KATY (BEECHUI) KOO</p>
+                <p class="block">Email: koobcbc@gmail.com</p>
+                <div class="myInfoLinks">
+                    <a href="https://www.linkedin.com/in/beechui-katy-koo-260b55128/" alt="Katy's LinkIn"><p class="block white">LinkIn</p></a>
+                    <a href="#" alt="Katy's Resume"><p class="block white">Resume</p></a>
+                </div>
+            </div>
+            <div class="emailInputBox">
+                <input type="text" class="input inputName block" placeholder="Your Name"> 
+                <input type="text" class="input inputEmail block" placeholder="Your Email">
+                <input type="text" class="input inputContent block" placeholder="Tell Me Anything">
+                <button class="submitBtn">Submit</button>
+            </div>
+        </container>
+    </div>
     <script src="app.js" charset="utf-8"></script>
 </body>
 </html>

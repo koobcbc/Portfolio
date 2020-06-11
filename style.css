@@ -1,3 +1,6 @@
+/* Color Variables */
+/* dark-navy-bgr: rgb(28, 43, 109); */
+
 /* General Styling */
 body {
     margin: 0;
@@ -19,6 +22,14 @@ h2 {
   font-size: 30px;
 }
 
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* Class Styling */
 .block {
     display: block;
@@ -29,7 +40,10 @@ h2 {
 }
 
 /* HAMBURGER ICON reference: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
+
+/* ------------------------- */
 /* Style the navigation menu */
+/* ------------------------- */
 .navbar-custom {
     box-sizing: border-box;
     overflow: visible;
@@ -43,6 +57,7 @@ h2 {
     z-index: 2;
   }
   
+  /* shadow below nav bar */
   #shadowOnScroll {
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
     height: 10px;
@@ -52,6 +67,7 @@ h2 {
     top: 73px;
   }
 
+  /* Katy Koo Navbar brand */
   .navbar-brand {
       align-self: flex-start;
       width: 140px;
@@ -127,6 +143,11 @@ h2 {
     color: black;
   }
 
+
+/* -------------------------------*/
+/* MAIN DIV (Introduction) Styling*/
+/* ------------------------------ */
+
   .mainDiv {
       box-sizing: border-box;
       width: 100%;
@@ -134,6 +155,11 @@ h2 {
       text-align: center;
       align-items: center;
       z-index: 1;
+  }
+
+  .introduction {
+    font-size: 14px;
+    padding: 24px;
   }
 
   .slantedDiv {
@@ -169,7 +195,7 @@ h2 {
   }
   .projectImageDiv{
     padding: 20px;
-    min-height: 350px;
+    min-height: 280px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,6 +220,81 @@ h2 {
   }
 
 /* ----------------- */
+/* AboutMe Styling */
+/* ----------------- */
+
+.aboutMe {
+  text-align: center;
+}
+
+/* ----------------- */
+/* ContactMe Styling */
+/* ----------------- */
+
+.contactMe {
+  background-color: rgb(28, 43, 109);
+  color: white;
+}
+
+.contactMe-container {
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.myInfo {
+padding: 20px 5px;
+width: 100%
+}
+
+.myInfo:first-child{
+  font-size: 17px;
+}
+
+.myInfoLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 30px;
+  justify-content: space-around;
+}
+
+.emailInputBox {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  text-align: center;
+  font-size: 17px;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid gray;
+}
+
+.inputContent {
+  height: 100px;
+}
+
+.submitBtn {
+  cursor: pointer;
+  width: 60%;
+  background-color: #f3f3f3;
+  border: 1px solid black;
+  display: inline-block;
+  font-size: 15px;
+  margin: 13px;
+  padding: 5px;
+}
+
+/* ----------------- */
 /* RESPONSIVE DESIGN */
 /* ----------------- */
 
@@ -203,7 +304,13 @@ h2 {
     }
   }
 
+  /* TABLET */
   @media only screen and (min-width:833px) {
+    /* NAV BAR */
+
+    /* MAIN SECTION */
+
+    /* PROJECTS */
 
     .projectImageDiv {
       min-height: 450px;
@@ -219,9 +326,22 @@ h2 {
         gap: 10px;
     }
   
+    /* ABOUT ME */
 
+    /* CONTACT ME */
+    .contactMe-container {
+      flex-direction: row;
+    }
+  }
 
+  /* DESKTOP */
   @media only screen and (min-width:1113px) {
+    /* NAV BAR */
+
+    /* MAIN SECTION */
+
+    /* PROJECTS */
+    
 
     .projectImageDiv {
       min-height: 450px;
@@ -235,4 +355,12 @@ h2 {
     .project-container {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
+    }
+
+    /* ABOUT ME */
+
+    /* CONTACT ME */
+    .contactMe-container {
+      flex-direction: row;
+    }
   }
