@@ -25,6 +25,7 @@ In this repo, you will find...
 ## Google Sheet for List of Projects / List of Skills
 
 [List of Projects](https://docs.google.com/spreadsheets/d/1DVsYouq2bljhJaC5GVWesAj1GZoAT1sTI-1inopSn3o/edit?usp=sharing) 
+
 [List of Skills](https://docs.google.com/spreadsheets/d/1gzo6lYq1kfwadx19Tg-ikVdwuBkr9EIehZemdgUngO4/edit?usp=sharing)
 
 ## Wireframes
