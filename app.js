@@ -16,9 +16,9 @@
         }
         if ($collapsingList.className === 'hide') {
           window.setTimeout(function(){
+              $collapsingList.style.display = 'none';
               $collapsingList.style.opacity = 0;
               $collapsingList.style.transform = 'scale(0)';
-              $collapsingList.style.display = 'none';
           },0); // duration for hiding
         }
 
@@ -39,23 +39,6 @@
           },0); // duration for hiding
         }
     }
-
-  //reference: https://stackoverflow.com/questions/14804725/twitter-bootstrap-navbar-shadow-on-scroll
-
-    // ---------------------------------------------------
-    //showing a box-shadow below navbar when scrolled down
-    // ---------------------------------------------------
-
-    $(document).ready(function(){
-      $(window).scroll(function(){
-      let $shadowScroll= $(window).scrollTop();
-      if( $shadowScroll > 0 ){
-      $("#shadowOnScroll").css({'display':'block', 'opacity':$shadowScroll/20});
-      } else {
-      $("#shadowOnScroll").css({'display':'block', 'opacity':$shadowScroll/20});
-      }
-      });
-    })
 
 
   // ---------------------------------------------------------
@@ -162,6 +145,3 @@
     })
   }
 
-// setting the height of skillDiv same as width
-// let skillDivWidth = $('.skillDiv').width();
-// $('.skillDiv').css({'height':skillDivWidth+'px'});

@@ -389,7 +389,7 @@ in order to go to the very top of the section when clicked on nav */
   width: 80%;
   height: 80%;
   transition: all 1s ease;
-  cursor: pointer;
+  /* cursor: pointer; */
   font-size: 6px;
 }
 
