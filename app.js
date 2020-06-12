@@ -50,9 +50,9 @@
       $(window).scroll(function(){
       let $shadowScroll= $(window).scrollTop();
       if( $shadowScroll > 0 ){
-      $("#shadowOnScroll").css({'display':'block', 'opacity':y/20});
+      $("#shadowOnScroll").css({'display':'block', 'opacity':$shadowScroll/20});
       } else {
-      $("#shadowOnScroll").css({'display':'block', 'opacity':y/20});
+      $("#shadowOnScroll").css({'display':'block', 'opacity':$shadowScroll/20});
       }
       });
     })
@@ -80,7 +80,6 @@
     })
 
   function app(projectsArr) {
-      console.log('inside app - projects', projectsArr)
       projectsArr.forEach( project => {
           //create div of individual project
           let individualProject = $('<div>')
@@ -129,3 +128,40 @@
       })
   }
 
+
+  // SKILLS SECTION
+  const skillsSheetUrl = 'https://docs.google.com/spreadsheets/d/1gzo6lYq1kfwadx19Tg-ikVdwuBkr9EIehZemdgUngO4/edit?usp=sharing'
+  const skillsSheetAsJSON = 'https://spreadsheets.google.com/feeds/list/1gzo6lYq1kfwadx19Tg-ikVdwuBkr9EIehZemdgUngO4/od6/public/values?alt=json'
+
+  $.ajax({
+    url: skillsSheetAsJSON,
+  }).then((data) => {
+      const skills = data.feed.entry.map( skill => {
+          return {
+              name: skill.gsx$skill.$t,
+              image: skill.gsx$image.$t,
+              url: skill.gsx$url.$t
+          }
+      }) // map ends
+      skillsApp(skills)
+  })
+
+  function skillsApp(skillsArr){
+    skillsArr.forEach(skill => {
+      let skillDiv = $('<div>')
+      let skillImg = $('<img>')
+      skillDiv.addClass('skillDiv')
+      skillImg
+        .addClass('skill')
+        .attr('src', skill.image)
+        .attr('alt', 'image of skill')
+        .css('cursor','pointer')
+
+      skillDiv.append(skillImg)
+      $(".skillsGrid").append(skillDiv)
+    })
+  }
+
+// setting the height of skillDiv same as width
+// let skillDivWidth = $('.skillDiv').width();
+// $('.skillDiv').css({'height':skillDivWidth+'px'});
