@@ -47,6 +47,22 @@ a {
   background-color: #476C9B;
 }
 
+.wholeSection {
+  text-align: center;
+}
+
+.lineDivision {
+  margin: 0.8rem 3rem 1.2rem 3rem;
+  width: 4rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* div created to match the height of nav bar
 in order to go to the very top of the section when clicked on nav */
 .heightMatchingDiv {
@@ -66,7 +82,7 @@ in order to go to the very top of the section when clicked on nav */
     overflow: visible;
     background-color: white;
     color: black;
-    width: 100%;
+    width: 100vw;
     flex-direction: row;
     padding: 20px;
     position: fixed;
@@ -78,7 +94,7 @@ in order to go to the very top of the section when clicked on nav */
   #shadowOnScroll {
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
     height: 10px;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     left:0;
     top: 73px;
@@ -173,9 +189,12 @@ in order to go to the very top of the section when clicked on nav */
   .mainDiv {
       box-sizing: border-box;
       width: 100%;
-      margin-top: 140px;
+      display:flex;
+      flex-direction: column;
       text-align: center;
       align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       z-index: 1;
   }
 
@@ -184,18 +203,52 @@ in order to go to the very top of the section when clicked on nav */
     padding: 24px;
   }
 
+  .socialLinks {
+    width: 40vw;
+    height: 50px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .socialLinks a{
+    width: 40px;
+    height: 40px;
+  }
+
+  .socialLinks a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+
+  .resumeBtn {
+    margin-top: 15px;
+    width: 150px;
+    font-size: 20px;
+    height: 35;
+    border: 2px solid black;
+    border-radius: 1px;
+    text-decoration: none;
+    color: black;
+  }
+
   .slantedDiv {
     background-color: rgb(28, 43, 109);
     clip-path: polygon(100% 0, 0 100%, 100% 100%);
     height: 5vw;
-    border: 1px solid rgb(28, 43, 109);
   }
   /* ----------------- */
   /* PROJECT DIVISION */
   /* ----------------- */
 
   .projectDiv {
-    padding: 10vw;
+    padding: 6vw;
     background-color: rgb(28, 43, 109);
     /* reference for slanted bottom/top edges: https://www.viget.com/articles/angled-edges-with-css-masks-and-transforms/ */
     z-index: 1;
@@ -205,8 +258,8 @@ in order to go to the very top of the section when clicked on nav */
       display: grid;
       align-items: center;
       justify-items: center;
-      grid-template-columns: 1fr;
-      gap: 10vw;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
   }
 
   .individualProject {
@@ -217,8 +270,8 @@ in order to go to the very top of the section when clicked on nav */
     border-radius: 40px;
   }
   .projectImageDiv{
-    padding: 20px;
-    min-height: 280px;
+    padding: 0 20px;
+    min-height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,18 +280,19 @@ in order to go to the very top of the section when clicked on nav */
 
   .projectImage {
       width: 100%;
+      height: auto;
   }
   
   .descriptionBox {
-    padding: 20px;
+    padding: 0 10px 5px 10px;
   }
 
   .projectTitle {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .projectDescription {
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 300;
   }
 
@@ -250,6 +304,29 @@ in order to go to the very top of the section when clicked on nav */
   text-align: center;
   padding: 25px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutMe h2 {
+  margin-bottom: 10px;
+}
+
+.aboutMeGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgOfMe {
+  width: 70vw;
+  height: auto;
+}
+
+.imgOfMe img {
+  width: 100%;
+  height: auto;
 }
 
 /* ----------------- */
@@ -319,18 +396,26 @@ in order to go to the very top of the section when clicked on nav */
   min-height: 100vh;
 }
 
+.contactMe h2 {
+  margin-bottom: 10px;
+}
+
 .contactMe-container {
   padding: 15px;
   margin: 10px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 3;
+  grid-template-columns: 1;
   align-items: center;
   text-align: center;
 }
 
 .myInfo {
 padding: 20px 5px;
-width: 100%
+width: 100%;
+display: flex;
+flex-direction:column;
+align-items: center;
 }
 
 .myInfo:first-child{
@@ -341,20 +426,42 @@ width: 100%
   font-size: 14px;
 }
 
-.myInfoLinks {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0 20vw;
-  justify-content: space-around;
-  cursor: pointer;
+.resumeLink p{
   text-decoration: underline;
-  text-decoration-color: white;
 }
 
-.myInfoLinks p:hover {
-  text-decoration: underline;
+.resumeLink p:hover {
   color: rgb(89, 102, 170);
+}
+
+
+.socialLinks-end {
+  width: 80%;
+  height: 50px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-content: center;
+  justify-items: center;
+  padding: 10px 30px;
+}
+
+
+.socialLinks-end a{
+  width: 40px;
+  height: 40px;
+  background-color: rgb(28, 43, 109);
+}
+
+
+.socialLinks-end a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background-color: rgb(28, 43, 109);
 }
 
 .emailInputBox {
@@ -379,6 +486,8 @@ width: 100%
 
 .inputContent {
   height: 100px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
 }
 
 .submitBtn {
@@ -406,38 +515,10 @@ width: 100%
     }
   }
 
-  /* TABLET */
-  @media only screen and (min-width:833px) {
-    /* NAV BAR */
-
-    /* MAIN SECTION */
-
-    /* PROJECTS */
-
-    .projectImageDiv {
-      min-height: 450px;
-      opacity: 0.4;
-    }
-
-    .projectImageDiv:hover {
-      opacity: 1;
-    }
-
-    .project-container {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-    }
   
-    /* ABOUT ME */
-
-    /* CONTACT ME */
-    .contactMe-container {
-      flex-direction: row;
-    }
-  }
 
   /* DESKTOP */
-  @media only screen and (min-width:1113px) {
+  @media only screen and (min-width:1000px) {
     /* NAV BAR */
 
     /* MAIN SECTION */
@@ -456,13 +537,156 @@ width: 100%
 
     .project-container {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
+        gap: 50px;
     }
 
     /* ABOUT ME */
 
     /* CONTACT ME */
     .contactMe-container {
-      flex-direction: row;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "myinfo emailInput";
     }
+
+    .contactMe-container form {
+      width: 80%;
+    }
+    .myInfo {
+      grid-area: myinfo;
+    }
+
+    .emailInputBox {
+      grid-area: emailInput;
+      width: 40vw;
+    }
+
+    .socialLinks-end {
+      width: 30%;
+      height: 50px;
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      align-content: center;
+      justify-items: center;
+      padding: 30px;
+    }
+
+
+    .socialLinks-end a{
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+    }
+
+    .socialLinks-end a img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.5s ease;
+    }
+  }
+
+  /* TABLET */
+  @media only screen and (min-width:765px) {
+    /* NAV BAR */
+
+    /* MAIN SECTION */
+
+    /* PROJECTS */
+
+    .projectImageDiv {
+      min-height: 300px;
+    }
+
+    .projectImageDiv:hover {
+      opacity: 1;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+    }
+  
+    /* ABOUT ME */
+    .aboutMe {
+      min-height: 0;
+    }
+
+    .aboutMeGrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .imgOfMe {
+      width: 400px;
+      margin-left: 100px;
+    }
+    
+    /* CONTACT ME */
+   
+
+    .contactMe-container {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "myinfo emailInput";
+      justify-items: center;
+      align-content: center;
+    }
+
+    .myInfo {
+      grid-area: myinfo;
+      justify-self: center;
+      align-self: center;
+    }
+
+
+    .socialLinks-end {
+      width: 30%;
+      height: 50px;
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      align-content: center;
+      justify-items: center;
+      padding: 30px;
+    }
+
+
+    .socialLinks-end a{
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+    }
+
+    .socialLinks-end a img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.5s ease;
+    }
+
+    .github {
+      grid-area: github;
+    }
+
+    .linkedIn {
+      grid-area: linkedIn;
+    }
+
+    .resumeBtn {
+      grid-area: resumeBtn;
+    }
+
+    .emailInputBox {
+      grid-area: emailInput;
+      justify-self: center;
+      align-self: center;
+      width: 100%;
+    }
+
   }
