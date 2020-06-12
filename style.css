@@ -268,10 +268,17 @@ in order to go to the very top of the section when clicked on nav */
     background-color: white;
     box-shadow: 0 0 30px black;
     border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
   .projectImageDiv{
     padding: 0 20px;
-    min-height: 160px;
+    width: 80%;
+    min-height: 190px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -280,7 +287,7 @@ in order to go to the very top of the section when clicked on nav */
 
   .projectImage {
       width: 100%;
-      height: auto;
+      max-height: 170px;
   }
   
   .descriptionBox {
@@ -330,7 +337,7 @@ in order to go to the very top of the section when clicked on nav */
 }
 
 /* ----------------- */
-/* ContactMe Styling */
+/* Skills Styling */
 /* ----------------- */
 
 .skillsSection {
@@ -583,6 +590,9 @@ align-items: center;
         gap: 50px;
     }
 
+    .projectImage{
+      max-height: none;
+    }
     /* ABOUT ME */
 
     /* CONTACT ME */
@@ -689,6 +699,10 @@ align-items: center;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 40px;
     }
+
+    .projectImage{
+      max-height: none;
+    }
   
     /* ABOUT ME */
     .aboutMe {
@@ -730,7 +744,7 @@ align-items: center;
       grid-area: emailInput;
       width: 40vw;
     }
-    
+
     .socialLinks-end {
       width: 30%;
       height: 50px;
