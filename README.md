@@ -22,10 +22,10 @@ In this repo, you will find...
 - Minimal Viable Product (MVP) & Post-MVP
 - html, css, js files for the project
 
-## Google Sheet for List of Projects
+## Google Sheet for List of Projects / List of Skills
 
-[LINK](https://docs.google.com/spreadsheets/d/1DVsYouq2bljhJaC5GVWesAj1GZoAT1sTI-1inopSn3o/edit#gid=0) 
-Still need to add images to them
+[LINK](https://docs.google.com/spreadsheets/d/1DVsYouq2bljhJaC5GVWesAj1GZoAT1sTI-1inopSn3o/edit?usp=sharing) 
+[LINK](https://docs.google.com/spreadsheets/d/1gzo6lYq1kfwadx19Tg-ikVdwuBkr9EIehZemdgUngO4/edit?usp=sharing)
 
 ## Wireframes
 
