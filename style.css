@@ -407,6 +407,7 @@ in order to go to the very top of the section when clicked on nav */
   grid-template-rows: 3;
   grid-template-columns: 1;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -464,7 +465,12 @@ align-items: center;
   background-color: rgb(28, 43, 109);
 }
 
+.contactMe-container form {
+  width: 80vw;
+}
+
 .emailInputBox {
+  box-sizing: border-box;
   padding: 5px;
   text-align: center;
   width: 80vw;
@@ -521,13 +527,50 @@ align-items: center;
   @media only screen and (min-width:1000px) {
     /* NAV BAR */
 
+    #collapse-container {
+      width: 500px;
+      height: 80px;
+      display: none;
+      opacity: 0;
+      transform: scale(0);
+      z-index: -1;
+    }
+    #collapse {
+      width: 500px;
+      height: 80px;
+      display: flex !important;
+      opacity: 1 !important;
+      transform: scale(1) !important;
+      flex-direction: row;
+      border:0;
+      text-align: center;
+      align-items: center;
+    }
+
+    #collapse a {
+      padding: 0;
+      margin: 0;
+      font-size: 20px;
+      display: inline;
+      cursor: pointer;
+      transition: all 0.5s ease;
+    }
+
+    #collapse a:hover {
+      color: #aaaaaa;
+    }
+
+    #burger-icon {
+      display: none;
+    }
+
     /* MAIN SECTION */
 
     /* PROJECTS */
     
 
     .projectImageDiv {
-      min-height: 450px;
+      min-height: 700px;
       opacity: 0.4;
     }
 
@@ -547,6 +590,8 @@ align-items: center;
       grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "myinfo emailInput";
+      justify-items: center;
+      align-content: center;
     }
 
     .contactMe-container form {
@@ -590,9 +635,44 @@ align-items: center;
   }
 
   /* TABLET */
-  @media only screen and (min-width:765px) {
+  @media only screen and (min-width:754px) {
     /* NAV BAR */
+    #collapse-container {
+      width: 500px;
+      height: 80px;
+      display: none;
+      opacity: 0;
+      transform: scale(0);
+      z-index: -1;
+    }
+    #collapse {
+      width: 400px;
+      height: 80px;
+      display: flex !important;
+      opacity: 1 !important;
+      transform: scale(1) !important;
+      flex-direction: row;
+      border:0;
+      text-align: center;
+      align-items: center;
+    }
 
+    #collapse a {
+      padding: 0;
+      margin: 0;
+      font-size: 20px;
+      display: inline;
+      cursor: pointer;
+      transition: all 0.5s ease;
+    }
+
+    #collapse a:hover {
+      color: #aaaaaa;
+    }
+
+    #burger-icon {
+      display: none;
+    }
     /* MAIN SECTION */
 
     /* PROJECTS */
@@ -636,13 +716,21 @@ align-items: center;
       align-content: center;
     }
 
+    .contactMe-container form {
+      width: 80%;
+    }
+
     .myInfo {
       grid-area: myinfo;
       justify-self: center;
       align-self: center;
     }
 
-
+    .emailInputBox {
+      grid-area: emailInput;
+      width: 40vw;
+    }
+    
     .socialLinks-end {
       width: 30%;
       height: 50px;
